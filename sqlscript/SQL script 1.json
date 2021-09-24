@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE [dbo].[Orders] ([OrderID] [int] NOT NULL,\n[CustomerID] [int] NOT NULL,  [OrderDate] [date] NOT NULL ) WITH\n(  DISTRIBUTION = ROUND_ROBIN,  CLUSTERED COLUMNSTORE INDEX )\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "sumukhdedicatedpool",
+				"poolName": "sumukhdedicatedpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
